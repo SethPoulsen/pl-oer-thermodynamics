@@ -1,32 +1,16 @@
 {
-    "uuid": "d39570cf-73ff-4912-bc28-9ae25d812eed",
+    "uuid": "fe472cd2-4759-4c0d-9b19-7383ca9b2817",
     "name": "OER 107",
     "title": "Thermodynamics",
-    "assessmentSets": [
-        {
-            "abbreviation": "G",
-            "name": "Gallery",
-            "heading": "Gallery of questions using different PrairieLearn elements",
-            "color": "orange1",
-            "description": "Gallery of PL questions"
-        }
+    "assessmentSets": [],
+    "topics": [
+      
+    ],
+    "tags": [
+        {"name": "author:prairielearn.com", "color": "blue3", "description": "questions created by prairielearn team"},
+        {"name": "license:CC-BY-NC", "color": "yellow3", "description": "license for all prairielearn.com questions"}    
     ],
     "options": {
         "useNewQuestionRenderer": true
-    },
-    "topics": [
-        {
-            "name": "Gallery",
-            "color": "orange1",
-            "description": "Gallery of PL questions"
-        }
-    ],
-    "tags": [
-        {
-            "name": "mariana@prairielearn.com",
-            "color": "gray1",
-            "description": "Author of the original question"
-        }
-    ],
-    "timezone": "America/Chicago"
+    }
 }

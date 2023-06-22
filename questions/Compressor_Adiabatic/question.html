@@ -1,0 +1,39 @@
+<pl-question-panel>
+<p>Air, modeled as an ideal gas, is compressed at steady state from $p_1 = {{params.P1}}$ {{params.PUnits}}, $T_1 = {{params.T1}}$ {{params.TUnits}} to $p_2 = {{params.P2}}$ {{params.PUnits}}, $T_2 = {{params.T2}}$ {{params.TUnits}}. Neglect the kinetic and potential energy of the air and use Table {{params.table}} for properties. Textbook property tables are available for download on Compass2g (Supplemental textbook sections). </p>   
+</pl-question-panel>
+
+<pl-overlay>
+<pl-background>
+<pl-drawing grid-size="0" width=600 height=300>
+  <pl-drawing-initial>
+      <pl-drawing-group visible="true">
+        <pl-rectangle x1=290 y1=150 width=160 height=100 stroke-width=0 color=#fda9ac></pl-rectangle>
+        <pl-triangle  x1=210 y1=100 x2=370 y2=100 x3=210 y3=40 stroke-width=0 color=#fda9ac></pl-triangle>
+        <pl-triangle  x1=210 y1=200 x2=370 y2=200 x3=210 y3=260 stroke-width=0 color=#fda9ac></pl-triangle>
+        <pl-rectangle x1=195 y1=120 width=30 height=20 stroke-width=0 color=#fda9ac></pl-rectangle>
+        <pl-rectangle x1=385 y1=190 width=30 height=20 stroke-width=0 color=#fda9ac></pl-rectangle>
+        <pl-rectangle x1=195 y1=150 width=50 height=25 stroke-width=0 color="gray"></pl-rectangle>
+        <pl-vector x1=150 y1=150 width="150" angle=0 color=blue3></pl-vector>
+        <pl-vector x1=150 y1=120 width=30 angle=0 color=gray3 arrow-head-length=0.75></pl-vector>
+        <pl-vector x1=397.5 y1=190 width=60 angle=0 color=gray3 arrow-head-length=0.75></pl-vector>
+      </pl-drawing-group>
+  </pl-drawing-initial>
+</pl-drawing>
+<br>
+</pl-background>
+<pl-location left=120 top=115 >$p_1$, $T_1$</pl-location>
+<pl-location left=490 top=190>$p_2$, $T_2$</pl-location>
+<pl-location left=235 top=165>$\dot{W}$</pl-location>
+
+</pl-overlay>
+<pl-question-panel>
+   <p> {{params.question_setup}} 1 Btu/s = 778.167 ft$\cdot$lbf/s.</p>
+</pl-question-panel>
+<pl-number-input answers-name="ans1" rtol="0.05" atol="1e-6" label="{{params.solve}}$=$" suffix="{{params.units}}"></pl-number-input>
+
+<pl-question-panel>
+	<hr/>
+	<p class="small text-muted">
+		Problem is from the <a href="https://www.prairielearn.com/oer">PrairieLearn OER repository</a>, licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>.
+	</p>
+</pl-question-panel>

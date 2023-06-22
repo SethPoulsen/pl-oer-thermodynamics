@@ -1,0 +1,44 @@
+<pl-question-panel>
+
+<p> A system undergoes a process during which it experiences four energy flows as illustrated by the quantities and directions
+  given in the diagram below.
+  All energy flows are in British Thermal Units (Btu). </p>
+
+<p>
+<pl-drawing grid-size="0" width="{{params.gW}}" height="{{params.gH}}">
+  <pl-drawing-initial>
+      <pl-drawing-group visible="true">
+        <pl-rectangle x1="{{params.sWpos}}" y1="{{params.sHpos}}" width="{{params.sW}}" height="{{params.sH}}" color="#a9ecfd" stroke-width=2></pl-rectangle>
+      </pl-drawing-group>
+      <pl-drawing-group visible="true">
+        <pl-vector x1="{{params.x1}}" y1="{{params.y1}}" width="{{params.len}}" angle="{{params.th1}}" color="#000000" anchor-is-tail={{params.tail1}} label="{{params.val1}}" offsetx="{{params.xoff1}}" offsety="{{params.yoff1}}"></pl-vector>
+        <pl-vector x1="{{params.x2}}" y1="{{params.y2}}" width="{{params.len}}" angle="{{params.th2}}" color="#000000" anchor-is-tail={{params.tail2}} label="{{params.val2}}" offsetx="{{params.xoff2}}" offsety="{{params.yoff2}}"></pl-vector>
+        <pl-vector x1="{{params.x3}}" y1="{{params.y3}}" width="{{params.len}}" angle="{{params.th3}}" color="#000000" anchor-is-tail={{params.tail3}} label="{{params.val3}}" offsetx="{{params.xoff3}}" offsety="{{params.yoff3}}"></pl-vector>
+        <pl-vector x1="{{params.x4}}" y1="{{params.y4}}" width="{{params.len}}" angle="{{params.th4}}" color="#000000" anchor-is-tail={{params.tail4}} label="{{params.val4}}" offsetx="{{params.xoff4}}" offsety="{{params.yoff4}}"></pl-vector>
+     </pl-drawing-group>
+  </pl-drawing-initial>
+</pl-drawing>
+</p>
+
+<p> Calculate the change in internal energy of the system. </p>
+</pl-question-panel>
+
+<pl-number-input answers-name="ans" label="$\Delta U=$" suffix="Btu" size=15 comparison="relabs" rtol=1e-1 atol=0.1></pl-number-input>
+
+</br></br>
+The energy of this system has <pl-dropdown sort="ascend" answers-name="dir">
+    <pl-answer correct="{{params.dec}}">decreased</pl-answer>
+    <pl-answer correct="{{params.inc}}">increased</pl-answer>
+    <pl-answer correct="{{params.ss}}">not changed</pl-answer>
+</pl-dropdown>.<p></p>
+
+<pl-submission-panel>
+   <p>{{feedback.IncorrectDir}}</p>
+</pl-submission-panel>
+
+<pl-question-panel>
+	<hr/>
+	<p class="small text-muted">
+		Problem is from the <a href="https://www.prairielearn.com/oer">PrairieLearn OER repository</a>, licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>.
+	</p>
+</pl-question-panel>

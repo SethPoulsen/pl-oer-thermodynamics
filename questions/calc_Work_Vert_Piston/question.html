@@ -1,0 +1,32 @@
+<pl-question-panel>
+<p>Air at ${{params.pint}}$ {{params.punits}} is contained in a well-insulated vertical piston-cylinder assembly such that the piston is initially in a state of static equilibrium.</p>
+
+<center>
+<pl-overlay>
+<pl-background>
+    <pl-drawing grid-size="0" width="300" height="300"></pl-drawing> <br>
+</pl-background>
+<pl-location left="150" top="150"><pl-figure file-name={{params.figname}} directory="clientFilesQuestion"></pl-figure></pl-location>
+<pl-location left="130" top="80">${{params.A}}$ {{params.Lunits}}$^2$</pl-location>
+<pl-location left="130" top="170">Air</pl-location>
+<pl-location left="130" top="200">${{params.pint}}$ {{params.punits}}</pl-location>
+<pl-location left="260" top="100">Piston</pl-location>
+</pl-overlay>
+</center>
+
+<br></br>
+<p>The atmosphere exerts a pressure of ${{params.pa}}$ {{params.punits}} on a piston having a cross-sectional area of ${{params.A}}$ {{params.Lunits}}$^2$. {{params.Conversion}}</p>
+
+<p> A quasiequilibrium thermodynamic process occurs during which the piston is {{params.heightchange}} ${{params.height}}$ {{params.Lunits}}. What is the work $W$ done by the gas in {{params.Eunits}}? (Your answer can be negative, indicating work is done on the gas.)</p>
+</pl-question-panel>
+
+<p>
+<pl-number-input answers-name="W" rtol=0.05 atol=1e-2 label="$W =$" suffix={{params.Eunits}}></pl-number-input>
+</p>
+
+<pl-question-panel>
+	<hr/>
+	<p class="small text-muted">
+		Problem is from the <a href="https://www.prairielearn.com/oer">PrairieLearn OER repository</a>, licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>.
+	</p>
+</pl-question-panel>

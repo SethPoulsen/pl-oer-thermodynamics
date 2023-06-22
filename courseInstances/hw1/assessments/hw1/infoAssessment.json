@@ -1,0 +1,82 @@
+{
+    "uuid": "f5edd592-08b9-4d8f-9466-f1b0e6b8a3ed",
+    "type": "Homework",
+    "title": "Question Bank",
+    "set": "Homework",
+    "number": "1",
+    "allowAccess": [
+        {
+            "mode": "Public",
+            "credit": 100
+        }
+    ],
+    "zones": [
+            {
+            "title": "Module1",
+            "questions": [
+                {
+                    "id": "System_EnergyBalance_PosOnly_calc","points": 1
+                }]
+            },
+            {
+                "title": "Module2",
+                "questions": [
+                    {
+                        "id": "calc_Work_Vert_Piston","points": 1
+                    }]
+            },
+            {
+                "title": "Module3",
+                "questions": [
+                    {
+                        "id": "mc_EnergyRateBalanceAssumptions","points": 1
+                    },
+                    {
+                        "id": "Compressor_Adiabatic","points": 1
+                    }
+                ]
+            },
+            {
+                "title": "Module4",
+                "questions": [
+                    {
+                        "id": "calc_SpecificHeatConstant_IG","points": 1
+                    },
+                    {
+                        "id": "calc_HEX_incompfluid","points": 1
+                    }
+                ]
+            },
+            {
+                "title": "Module5",
+                "questions": [
+                    {
+                        "id": "Tank_withdraw_sat_vapor","points": 1
+                    },
+                    {
+                        "id": "evaporator_phase_change","points": 1
+                    }]
+            },
+            {
+                "title": "Module6",
+                "questions": [
+                    {
+                        "id": "calc-air_conditioner-component","points": 1
+                    }]
+            },
+            {
+                "title": "Module7",
+                "questions": [
+                    {
+                        "id": "calc_IG_PistonCyl_Reversible","points": 1
+                    }]
+            },
+            {
+                "title": "Module8",
+                "questions": [
+                    {
+                        "id": "Turbine_entropy_generation","points": 1
+                    }]
+            }
+    ]
+}

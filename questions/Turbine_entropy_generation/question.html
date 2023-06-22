@@ -1,0 +1,48 @@
+<pl-question-panel>
+<p> Steam enters a turbine operating at steady state at {{params.p1}} MPa, {{params.T1}}°C with a mass flow rate of {{params.m}} kg/min and exits as saturated vapor at {{params.p2}} kPa, {{params.setup}}. Kinetic and potential energy effects can be ignored. Assume large control volume that includes the turbine and enough of its surroundings that heat transfer occurs at the ambient temperature, 27°C.</p>   
+</pl-question-panel>
+
+
+
+<pl-overlay> 
+<pl-background>    
+<pl-drawing grid-size="0" width=600 height=320>
+  <pl-drawing-initial>
+      <pl-drawing-group visible="true">
+        <pl-polygon color="#fda9ac" plist='[{"x":200, "y":130},{"x":180, "y":130},{"x":180, "y":110},{"x":200, "y":110},{"x":200, "y":100},{"x":380, "y":40},{"x":380, "y":230},{"x":400, "y":230},{"x":400, "y":250},{"x":380, "y":250},{"x":380, "y":260},{"x":200, "y":200}]'></pl-polygon>
+        <pl-rectangle x1=405 y1=150 width=70 height=25 stroke-width=0 color="gray"></pl-rectangle>
+        <pl-vector x1=390 y1=150 width="80" angle=0 color=blue3 label="\\dot{W}"></pl-vector>
+        <pl-vector x1=140 y1=120 width=60 angle=0 color=gray3 arrow-head-length=0.75></pl-vector>
+        <pl-vector x1=380 y1=240 width=60 angle=0 color=gray3 arrow-head-length=0.75></pl-vector>
+        <pl-vector x1=270 y1=50 width=60 angle=70 color=red arrow-head-length=0.75></pl-vector>
+        <pl-text x1=185 y1=92 label="1" ></pl-text>
+        <pl-text x1=385 y1=212 label="2" ></pl-text>
+        <pl-text x1=280 y1=30 label="\\dot{Q}" ></pl-text>
+      </pl-drawing-group>
+  </pl-drawing-initial>
+</pl-drawing>
+<br>
+</pl-background>
+<pl-location left=80 top=100 >$\dot{m}=${{params.m}} kg/min</pl-location>
+<pl-location left=80 top=120 >$T_1=${{params.T1}}°C</pl-location>
+<pl-location left=80 top=140 >$p_1=${{params.p1}} MPa</pl-location>
+<pl-location left=500 top=240>Saturated vapor</pl-location>
+<pl-location left=500 top=260>$p_2=${{params.p2}} kPa</pl-location>
+
+</pl-overlay>
+
+<pl-question-panel>
+   <p> {{params.ask}}. </p>
+</pl-question-panel>
+<pl-number-input answers-name="ans" rtol="0.05" atol="1e-6" label="{{params.solve}}=" suffix="{{params.unit}}"></pl-number-input>
+
+<pl-question-panel>
+	<hr/>
+	<p class="small text-muted">
+		Problem is from the <a href="https://www.prairielearn.com/oer">PrairieLearn OER repository</a>, licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>.
+	</p>
+</pl-question-panel>
+
+
+
+

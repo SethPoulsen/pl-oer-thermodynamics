@@ -1,0 +1,63 @@
+<pl-question-panel>
+<p> A rigid tank having a volume of {{params.V}} {{params.Vunits}}<sup>3</sup> initially contains water as a two-phase liquid-vapor mixture at {{params.p1}} {{params.Punits}} and a quality of {{params.x}}%. The water is heated in two stages:
+    <br><b>Stage1:</b> Constant-volume heating until the pressure is {{params.p2}} {{params.Punits}}.
+    <br><b>Stage 2:</b> Continued heating while saturated water vapor is slowly withdrawn from the tank at a constant pressure of {{params.p2}} {{params.Punits}}. Heating ceases when all the water remaining in the tank is saturated vapor at {{params.p2}} {{params.Punits}}.</p>
+</pl-question-panel>
+
+<pl-overlay> 
+<pl-background>    
+<pl-drawing grid-size="0" width=640 height=300>
+  <pl-drawing-initial>
+      <pl-drawing-group visible="true">
+        <pl-rectangle x1=130 y1=70 width=160 height=20 stroke-width=1 color="#a9fdfa"></pl-rectangle>
+        <pl-rectangle x1=130 y1=170 width=160 height=180 stroke-width=1 color="#76b3b0"></pl-rectangle>
+        <pl-vector x1=20 y1=160 width="60" angle=0 color=red></pl-vector>
+        <pl-line x1=50.5 y1=80 x2=209.5 y2=80 stroke-color="#a9fdfa"></pl-line>
+        
+        <pl-rectangle x1=340 y1=110 width=160 height=100 stroke-width=1 color="#a9fdfa"></pl-rectangle>
+        <pl-rectangle x1=340 y1=210 width=160 height=100 stroke-width=1 color="#76b3b0"></pl-rectangle>
+        <pl-rectangle x1=400 y1=50 width=10 height=20 stroke-width=1 color="#a9fdfa"></pl-rectangle>
+        <pl-vector x1=400 y1=40 width="30" angle=270 color=black ></pl-vector>
+
+        <pl-line x1=260.5 y1=160 x2=419.5 y2=160 stroke-color="#a9fdfa"></pl-line>
+        <pl-vector x1=230 y1=160 width="60" angle=0 color=red ></pl-vector>
+        
+        <pl-rectangle x1=540 y1=160 width=160 height=200 stroke-width=1 color="#a9fdfa"></pl-rectangle>
+        
+      </pl-drawing-group>
+  </pl-drawing-initial>
+</pl-drawing>
+<br>
+</pl-background>
+<pl-location left=15 top=145 >$Q_1$</pl-location>
+<pl-location left=235 top=145 >$Q_2$</pl-location>
+<pl-location left=140 top=230 >$V=${{params.V}} {{params.Vunits}}<sup>3</sup></pl-location>
+<pl-location left=340 top=230 >$V=${{params.V}} {{params.Vunits}}<sup>3</sup></pl-location>
+<pl-location left=540 top=230 >$V=${{params.V}} {{params.Vunits}}<sup>3</sup></pl-location>
+<pl-location left=140 top=200 >$p_1=${{params.p1}} {{params.Punits}}</pl-location>
+<pl-location left=140 top=180 >$x_1=${{params.x}}%</pl-location>
+<pl-location left=340 top=200 >$p_2=${{params.p2}} {{params.Punits}}</pl-location>
+<pl-location left=540 top=200 >$p_3=${{params.p2}} {{params.Punits}}</pl-location>
+<pl-location left=540 top=180 >$x_3=$100%</pl-location>
+<pl-location left=360 top=20 >Sat. vapor</pl-location>
+
+
+</pl-overlay>
+
+
+<pl-question-panel>
+   <p>Evaluate the heat transfer, in {{params.Qunits}}, for <b>stage 1</b>.</p>
+</pl-question-panel>
+<pl-number-input answers-name="answer1" comparison="relabs" rtol="5e-2" atol="1e-6" label="$Q_1=$" suffix={{params.Qunits}}></pl-number-input>
+
+<pl-question-panel>
+   <p> Evaluate the heat transfer, in {{params.Qunits}}, for <b>stage 2</b>. </p>
+</pl-question-panel>
+<pl-number-input answers-name="answer2" comparison="relabs" rtol="5e-2" atol="1e-6" label="$Q_2=$" suffix={{params.Qunits}}></pl-number-input>
+
+<pl-question-panel>
+	<hr/>
+	<p class="small text-muted">
+		Problem is from the <a href="https://www.prairielearn.com/oer">PrairieLearn OER repository</a>, licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 license</a>.
+	</p>
+</pl-question-panel>
