@@ -8,5 +8,6 @@
         "calculate",
         "license:CC-BY-NC"
     ],
-    "type": "v3"
+    "type": "v3",
+    "sharedPublicly": true
 }
